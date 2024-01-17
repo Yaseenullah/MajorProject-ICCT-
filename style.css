@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#cllgPic{
+    width:100% ;
+    height:70vh ;
+}
+#logo{
+    position: absolute;
+    background-color: aliceblue
+}
+#icctLOGO{
+    height: 4rem;
+    width: 14rem;
+    display: inline;
+    /* background-color: red; */
+}
+.conference{
+    background: #135098;
+    text-align: center;
+    color: white;
+    padding: 6vh;
+}
+.headNav{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+    /* background-color: #85c6e7; */
+    text-decoration-color: white;
+    text-decoration: solid;
+}
+.headerNav{
+    text-decoration: none;
+    color: #135098;
+    font-size: 2rem;
+    display: inline;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+}
+.home{
+    width: 70vw;
+}
+.about{
+    width: 70vw;
+}
+#aboutP{
+    margin-left: 10rem;
+}
+#aboutT{
+    padding: 2rem;
+    font-size: 2rem;
+}
+.para{
+    margin-left: 11rem;
+}
+.head{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+    background: rgb(133,198,231);
+background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
+}
+.headF{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    background: rgb(133,198,231);
+background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
+}
+.uni{
+    width: 70vw;
+}
+.dep{
+    width: 70vw;
+}
+.committee{
+    width: 70vw;
+}
+.keyspeaker{
+    width: 70vw;
+}
+.brochure{
+    width: 70vw;
+}
+#brouchImg{
+    width: 70vw;
+    height: 90vh;
+}
+.registration{
+    width: 70vw;
+    align-content: center;
+}
+.card{
+    border: 1px solid black;
+    width: 16.7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 25rem;
+}
+#cardN{
+    text-align: center;
+    font-size: 2rem;
+}
+#cardP{
+    margin: 0.7rem;
+}
+#keyspeakH{
+    padding: 2rem;
+    font-size: 2rem;
+    width: 50vw;
+}
+.card{
+    margin-left: 10rem;
+}
+
+.cardDIV{
+    display: flex;
+}
+
+/* .overlay{
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+    position: ;
+} */
+
+.overlay{
+    /* background-color: aqua; */
+    height: 0px;
+    width: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid black;
+    /* border-top: ; */
+}
+#email{
+    border: 1px solid white;
+    color: white;
+    background-color:  #135098;
+    padding: 0.6rem;
+    width: 15rem;
+    height: 2.5rem;
+}
+#subscribe{
+    border: 1px solid white;
+    color: white;
+    background-color:  #135098;
+    padding: 0.6rem;
+    /* width: 15rem; */
+    height: 2.5rem;
+}
+::placeholder{
+    color: white;
+}
+
+.footer{
+    background-color: #135098;
+    padding: 4rem;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footNav{
+    width: 30vw;
+    margin: auto;
+}
+.footerNav{
+    color: aliceblue;
+}
+#copyright{
+    margin-top: 2rem;
+}
+.middle{
+    line-height: 2rem;
+}
+.middleheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.anchor{
+    color: aliceblue;
+    text-decoration: none;
+}
+.forAuthors{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.callForPapers{
+    width: 70vw;
+    margin-top: 2rem;
+}
+.inline{
+    /* display: inline; */
+    margin-left: 1rem;
+}
+.dist{
+    margin-left: 1rem;
+}
+#contact{
+    border-spacing: 2rem;
+}
+.two-column-list{
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+   column-count: 2;
+   column-gap: 10px;
+}
+.pad{
+    padding:15px;
+}
