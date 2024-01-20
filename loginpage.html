@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="logincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container" id="container">
+        <h1>Login</h1>
+        <form>
+            <label for="username">UserName:</label>
+            <input type="text" id="username" name="username" title="Must contain alphabets, and at least 6 or more characters" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit" onclick="validateForm()">LOGIN</button>
+            <button type="submit" onclick="signupnow()" class="sign-in-button" id="signup-button">Not a Registered user? Sign Up Now</button>
+        </form>
+    </div>
+    <script>
+        function signupnow() {
+                window.location.href = "signuphtml.html";
+        }
+        function validateForm() {
+            var firstName = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Regular expressions for validation
+            var nameRegex = /^[a-zA-Z]{6,}$/;
+            var passwordRegex = /^.{6,}$/;
+
+            // Check first name
+            if (!nameRegex.test(firstName)) {
+                alert("First name must contain at least 6 letters, and only alphabets.");
+                return false;
+            }
+
+            // Check password
+            if (!passwordRegex.test(password)) {
+                alert("Password must contain at least 6 characters.");
+                return false;
+            }
+            alert("registration successful")
+            return true;
+        }
+    </script>
+</body>
+</html>
