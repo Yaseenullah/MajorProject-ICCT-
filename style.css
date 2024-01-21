@@ -14,13 +14,10 @@ body{
     width:100% ;
     height:70vh ;
 }
-#logo{
-    position: absolute;
-    background-color: aliceblue
-}
+
 #icctLOGO{
-    height: 4rem;
-    width: 14rem;
+    height: 5rem;
+    width: 15rem;
     display: inline;
     /* background-color: red; */
 }
@@ -32,20 +29,29 @@ body{
 }
 .headNav{
     width: 100%;
-    height: 9vh;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     padding: 1rem;
-    /* background-color: #85c6e7; */
+    background-color: white;
     text-decoration-color: white;
     text-decoration: solid;
+    
+    position: sticky;
+    top: 0;
+    /* bottom: 40px; */
+    /* right: 0;
+    left: 0;
+    bottom: 0; */
+    
 }
 .headerNav{
     text-decoration: none;
     color: #135098;
     font-size: 2rem;
     display: inline;
+    padding-top: 1.5rem;
 }
 .main{
     display: flex;
