@@ -1,4 +1,86 @@
 body {
+    background-color: #d6d6d6;
+    font-family: Arial, sans-serif;
+   }
+  .login-container {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+   }
+   h1 {
+    background: -webkit-linear-gradient(45deg, rgb(0, 123, 255), lightblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+   .input-container {
+    margin-bottom: 20px;
+   }
+   
+   label {
+    display: block;
+    margin-bottom: 5px;
+   }
+   
+   input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+   }
+   
+   input:focus {
+    border-color: #6699cc;
+    outline: none;
+   }
+   
+   button {
+    width: 100%;
+    padding: 10px;
+    background-color: #428dd7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+   }
+   
+   button:hover {
+    background-color: #336699;
+   }
+  
+   a{
+    width:fill;
+    padding: 10px;
+    color:#1c7fe2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   a:hover{
+    color: rgb(33, 91, 214);
+   }
+   
+   @keyframes fadeIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    }
+/* body {
     background-color: #f0f0f0;
 }
 
@@ -66,4 +148,4 @@ body {
    .sign-in-button:hover {
     color: red;
     font-weight: 300;
-   }
+   } */

@@ -19,7 +19,7 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
 
-            <button type="submit" onclick="validateForm()">LOGIN</button>
+            <button type="button" onclick="validateForm()">LOGIN</button>
             <button type="submit" onclick="signupnow()" class="sign-in-button" id="signup-button">Not a Registered user? Sign Up Now</button>
         </form>
     </div>
@@ -30,6 +30,7 @@
         function validateForm() {
             var firstName = document.getElementById("username").value;
             var password = document.getElementById("password").value;
+            var c=1;
 
             // Regular expressions for validation
             var nameRegex = /^[a-zA-Z]{6,}$/;
@@ -38,16 +39,18 @@
             // Check first name
             if (!nameRegex.test(firstName)) {
                 alert("First name must contain at least 6 letters, and only alphabets.");
-                return false;
+                c=0;
             }
 
             // Check password
             if (!passwordRegex.test(password)) {
                 alert("Password must contain at least 6 characters.");
-                return false;
+                c=0;
             }
-            alert("registration successful")
-            return true;
+            if(c==1){
+            window.location.href = "dashboard.html";
+            }
+            
         }
     </script>
 </body>

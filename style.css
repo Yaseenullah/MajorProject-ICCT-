@@ -28,23 +28,28 @@ body{
     padding: 6vh;
 }
 .headNav{
-    width: 100%;
+    width: fill;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
-    padding: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease;
     background-color: white;
-    text-decoration-color: white;
     text-decoration: solid;
-    
     position: sticky;
-    top: 0;
-    /* bottom: 40px; */
-    /* right: 0;
-    left: 0;
-    bottom: 0; */
-    
+    top: 0;  
+}
+.headNav a:hover{
+    color: azure;
+    background: #135098;
+    overflow: none;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 .headerNav{
     text-decoration: none;
@@ -52,6 +57,8 @@ body{
     font-size: 2rem;
     display: inline;
     padding-top: 1.5rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
 }
 .main{
     display: flex;
@@ -81,14 +88,14 @@ body{
     padding: 2rem;
     font-size: 2rem;
     background: rgb(133,198,231);
-background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
+    background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
 }
 .headF{
     margin-bottom: 1rem;
     padding: 2rem;
     font-size: 2rem;
     background: rgb(133,198,231);
-background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
+    background: linear-gradient(90deg, rgba(133,198,231,0.73357265269389) 26%, rgba(19,80,152,1) 83%);
 }
 .uni{
     width: 70vw;
